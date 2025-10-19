@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -std=c++20 -O3 CMakeFiles/channel_recovery_demo.dir/channel_recovery_demo.cpp.o -o /home/xavier/MECT/IC/first/exercises/exercise1/bin/channel_recovery_demo  -lsndfile 

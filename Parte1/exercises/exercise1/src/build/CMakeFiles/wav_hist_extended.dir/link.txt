@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -std=c++20 -O3 CMakeFiles/wav_hist_extended.dir/wav_hist_extended.cpp.o -o /home/xavier/MECT/IC/first/exercises/exercise1/bin/wav_hist_extended  -lsndfile 

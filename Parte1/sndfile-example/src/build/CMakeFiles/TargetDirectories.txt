@@ -1,0 +1,5 @@
+/home/xavier/MECT/IC/first/sndfile-example/src/build/CMakeFiles/wav_cp.dir
+/home/xavier/MECT/IC/first/sndfile-example/src/build/CMakeFiles/wav_hist.dir
+/home/xavier/MECT/IC/first/sndfile-example/src/build/CMakeFiles/wav_dct.dir
+/home/xavier/MECT/IC/first/sndfile-example/src/build/CMakeFiles/edit_cache.dir
+/home/xavier/MECT/IC/first/sndfile-example/src/build/CMakeFiles/rebuild_cache.dir

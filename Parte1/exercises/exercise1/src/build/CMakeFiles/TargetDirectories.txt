@@ -1,0 +1,4 @@
+/home/xavier/MECT/IC/first/exercises/exercise1/src/build/CMakeFiles/wav_hist_extended.dir
+/home/xavier/MECT/IC/first/exercises/exercise1/src/build/CMakeFiles/channel_recovery_demo.dir
+/home/xavier/MECT/IC/first/exercises/exercise1/src/build/CMakeFiles/edit_cache.dir
+/home/xavier/MECT/IC/first/exercises/exercise1/src/build/CMakeFiles/rebuild_cache.dir
