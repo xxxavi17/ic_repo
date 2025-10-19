@@ -1,0 +1,57 @@
+# Makefile para DCT Audio Codec
+# Compilação direta sem CMake
+
+# Compilador
+CXX = g++
+CXXFLAGS = -Wall -Wextra -std=c++20 -O3
+
+# Diretórios
+SRC_DIR = .
+BIN_DIR = ../bin
+
+# Ficheiros fonte
+COMMON_SRC = bit_stream.cpp byte_stream.cpp
+CODEC_SRC = dct_codec.cpp
+ENCODER_SRC = dct_encoder.cpp
+DECODER_SRC = dct_decoder.cpp
+TEST_SRC = dct_test.cpp
+
+# Objetos
+COMMON_OBJ = $(COMMON_SRC:.cpp=.o)
+CODEC_OBJ = $(CODEC_SRC:.cpp=.o)
+
+# Executáveis
+ENCODER = $(BIN_DIR)/dct_encoder.exe
+DECODER = $(BIN_DIR)/dct_decoder.exe
+TEST = $(BIN_DIR)/dct_test.exe
+
+# Regra principal
+all: $(BIN_DIR) $(ENCODER) $(DECODER) $(TEST)
+
+# Criar diretório bin
+$(BIN_DIR):
+	@if not exist "$(BIN_DIR)" mkdir "$(BIN_DIR)"
+
+# Encoder
+$(ENCODER): $(COMMON_OBJ) $(CODEC_OBJ) $(ENCODER_SRC)
+	$(CXX) $(CXXFLAGS) -o $@ $(COMMON_OBJ) $(CODEC_OBJ) $(ENCODER_SRC)
+
+# Decoder
+$(DECODER): $(COMMON_OBJ) $(CODEC_OBJ) $(DECODER_SRC)
+	$(CXX) $(CXXFLAGS) -o $@ $(COMMON_OBJ) $(CODEC_OBJ) $(DECODER_SRC)
+
+# Test
+$(TEST): $(COMMON_OBJ) $(CODEC_OBJ) $(TEST_SRC)
+	$(CXX) $(CXXFLAGS) -o $@ $(COMMON_OBJ) $(CODEC_OBJ) $(TEST_SRC)
+
+# Compilar objetos
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Limpar
+clean:
+	del /Q *.o 2>nul
+	del /Q $(BIN_DIR)\*.exe 2>nul
+
+# Phony targets
+.PHONY: all clean

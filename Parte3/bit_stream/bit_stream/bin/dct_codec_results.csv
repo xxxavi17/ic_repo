@@ -1,0 +1,13 @@
+Teste,Ficheiro,Tamanho_Bloco,Num_Coeficientes,Fator_Quantizacao,Duracao_s,Tamanho_Original_bytes,Tamanho_Comprimido_bytes,Taxa_Compressao,Bitrate_kbps,SNR_dB,Tempo_Codificacao_s,Tempo_Descodificacao_s
+T2,../../../audio_files/mono\sample01.wav,512,256,2,29.347,2588454,1299406,1.992,354.222,10.692,24.239,24.378
+T3,../../../audio_files/mono\sample01.wav,512,128,5,29.347,2588454,652238,3.969,177.802,19.968,24.447,24.504
+T4,../../../audio_files/mono\sample01.wav,1024,256,10,29.347,2588454,649710,3.984,177.113,20.000,49.067,49.103
+T5,../../../audio_files/mono\sample01.wav,1024,128,20,29.347,2588454,326126,7.937,88.903,12.297,49.135,49.051
+T6,../../../audio_files/mono\sample01.wav,256,128,5,29.347,2588454,1304462,1.984,355.601,30.321,12.203,12.242
+T7,../../../audio_files/mono\sample01.wav,256,64,10,29.347,2588454,657294,3.938,179.181,19.899,12.171,12.216
+T2,../../../audio_files/mono\sample02.wav,512,256,2,14.680,1294854,650224,1.991,354.346,14.895,12.221,12.531
+T3,../../../audio_files/mono\sample02.wav,512,128,5,14.680,1294854,326384,3.967,177.866,9.544,12.350,12.888
+T4,../../../audio_files/mono\sample02.wav,1024,256,10,14.680,1294854,325376,3.980,177.317,9.539,24.716,24.706
+T5,../../../audio_files/mono\sample02.wav,1024,128,20,14.680,1294854,163328,7.928,89.007,7.176,24.693,24.766
+T6,../../../audio_files/mono\sample02.wav,256,128,5,14.680,1294854,652496,1.984,355.584,16.221,6.108,6.127
+T7,../../../audio_files/mono\sample02.wav,256,64,10,14.680,1294854,328784,3.938,179.174,9.546,6.108,6.119
