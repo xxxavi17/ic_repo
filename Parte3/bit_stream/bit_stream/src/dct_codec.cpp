@@ -171,7 +171,7 @@ bool read_wav_file(const string& filename, WAVHeader& header, vector<short>& sam
             }
             break;
         } else {
-            // Pular este chunk
+
             file.seekg(chunk_size, ios::cur);
         }
     }
@@ -210,7 +210,7 @@ bool read_wav_file(const string& filename, WAVHeader& header, vector<short>& sam
             file.read(reinterpret_cast<char*>(samples.data()), chunk_size);
             break;
         } else {
-            // Pular este chunk
+
             file.seekg(chunk_size, ios::cur);
         }
     }

@@ -11,7 +11,7 @@
 using namespace std;
 
 /**
- * @brief Programa principal do decoder
+ * @brief 
  */
 int main(int argc, char* argv[]) {
     cout << "DCT Audio Decoder" << endl;
